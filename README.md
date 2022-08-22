@@ -1,1 +1,1 @@
-# altschool-cloud-exercide
+# altschool-cloud-exercise
