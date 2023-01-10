@@ -1,0 +1,16 @@
+---
+# tasks file for nginx
+
+- name: update servers
+  command: apt update
+
+- name: installl nginx
+  apt:
+    name: nginx
+
+- name: hostname
+  shell: echo "<h1>This is my server $(hostname -f)</h1>" > /var/www/html/index.nginx-debian.html
+
+
+- name: restart service
+  command: systemctl restart nginx
